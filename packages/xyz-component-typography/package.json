@@ -2,5 +2,8 @@
   "name": "xyz-component-typography",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "prop-types": "^15.6.2"
+  }
 }
