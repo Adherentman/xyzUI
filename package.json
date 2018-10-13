@@ -17,7 +17,7 @@
     "cacheDir": ".changelog"
   },
   "lint-staged": {
-    "/*.js": ["eslint --fix",  "prettier --write", "git add"]
+    "*.js": ["eslint --fix",  "prettier --write", "git add"]
   },
   "husky": {
     "hooks": {
