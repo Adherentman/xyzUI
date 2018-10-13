@@ -4,9 +4,19 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean"
+  },"changelog": {
+    "labels": {
+      "breaking": ":boom: Breaking Change",
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "documentation": ":memo: Documentation",
+      "internal": ":house: Internal"
+    },
+    "cacheDir": ".changelog"
   },
   "devDependencies": {
     "lerna": "^3.4.0",
+    "lerna-changelog": "^0.8.1",
     "mkdir": "^0.0.2",
     "rimraf": "^2.6.2"
   },
