@@ -3,8 +3,7 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean",
-    "prettier": "lint-staged"
+    "clean": "lerna clean"
   },
   "changelog": {
     "labels": {
@@ -17,11 +16,11 @@
     "cacheDir": ".changelog"
   },
   "lint-staged": {
-    "*.js": ["eslint --fix",  "prettier --write", "git add"]
+    "packages/*/src/**/*.js": ["eslint --fix",  "prettier --write", "git add"]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn prettier"
+      "pre-commit": "lint-staged"
     }
   },
   "devDependencies": {
