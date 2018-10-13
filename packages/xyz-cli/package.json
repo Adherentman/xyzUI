@@ -1,6 +1,6 @@
 {
   "name": "xyz-cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "develompent tools",
   "bin": {
     "xyz": "bin/xyz.js"

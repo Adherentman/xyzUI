@@ -3,8 +3,10 @@
   "private": true,
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "clean": "lerna clean"
-  },"changelog": {
+    "clean": "lerna clean",
+    "prettier": "lint-staged"
+  },
+  "changelog": {
     "labels": {
       "breaking": ":boom: Breaking Change",
       "enhancement": ":rocket: Enhancement",
@@ -14,10 +16,30 @@
     },
     "cacheDir": ".changelog"
   },
+  "lint-staged": {
+    "/*.js": ["eslint --fix",  "prettier --write", "git add"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier"
+    }
+  },
   "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
     "lerna": "^3.4.0",
     "lerna-changelog": "^0.8.1",
     "mkdir": "^0.0.2",
+    "prettier": "^1.14.3",
     "rimraf": "^2.6.2"
   },
   "dependencies": {}
