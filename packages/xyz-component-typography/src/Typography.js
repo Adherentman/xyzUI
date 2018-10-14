@@ -1,7 +1,7 @@
 import React from 'react'
 
 class Typography extends React.Component {
-  render() {
+  render () {
     return <div>typography</div>
   }
 }
