@@ -2,6 +2,7 @@
     "extends": "airbnb",
     "parser": "babel-eslint",
     "plugins": [
+        "import",
         "react",
         "prettier"
     ],
@@ -9,9 +10,14 @@
         "browser": true,
         "node": true
     },
+    "settings": {
+        "import/core-modules": ["react"]
+    },
     "rules": {
+        "import/no-unresolved": 2,
         "import/no-extraneous-dependencies": "off",
         "react/jsx-filename-extension": "off",
-        "react/prefer-stateless-function": "off"
+        "react/prefer-stateless-function": "off",
+        "semi": "off"
     }
 }
