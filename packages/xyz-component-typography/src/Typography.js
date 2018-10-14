@@ -4,7 +4,7 @@ class Typography extends React.Component {
 	render() {
 		return (
 			<div>
-				<a href="/">nihao!</a>
+				<a href="/">nihao</a>
 				typography!
 			</div>
 		)
