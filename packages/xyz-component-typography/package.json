@@ -3,6 +3,16 @@
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
+  "changelog": {
+    "labels": {
+      "breaking": ":boom: Breaking Change",
+      "enhancement": ":rocket: Enhancement",
+      "bug": ":bug: Bug Fix",
+      "documentation": ":memo: Documentation",
+      "internal": ":house: Internal"
+    },
+    "cacheDir": ".changelog"
+  },
   "dependencies": {
     "prop-types": "^15.6.2"
   },
