@@ -1,4 +1,5 @@
 {
+  "private": true,
   "name": "xyz-cli",
   "version": "0.0.2",
   "description": "develompent tools",
