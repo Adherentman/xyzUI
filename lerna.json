@@ -1,15 +1,4 @@
 {
-  "changelog": {
-    "labels": {
-      "breaking": ":boom: Breaking Change",
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "documentation": ":memo: Documentation",
-      "internal": ":house: Internal"
-    },
-    "repo": "Adherentman/xyzUI",
-    "cacheDir": ".changelog"
-  },
   "packages": [
     "packages/*"
   ],

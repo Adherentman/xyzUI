@@ -4,7 +4,8 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
-    "changlog": "lerna-changelog"
+    "cz": "git-cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,9 @@
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
     "babel-eslint": "^10.0.1",
+    "commitizen": "^3.0.2",
+    "conventional-changelog-cli": "^2.0.5",
+    "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.7.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
@@ -35,11 +39,15 @@
     "eslint-plugin-react": "^7.11.1",
     "husky": "^1.1.2",
     "lerna": "^3.4.0",
-    "lerna-changelog": "^0.8.1",
     "lint-staged": "^7.3.0",
     "mkdir": "^0.0.2",
     "prettier": "^1.14.3",
     "rimraf": "^2.6.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
