@@ -4,7 +4,7 @@ class Typography extends React.Component {
 	render() {
 		return (
 			<div>
-				<a href="/">test</a>
+				<a href="/">test!</a>
 			</div>
 		)
 	}
