@@ -3,21 +3,10 @@
   "version": "0.0.5",
   "main": "index.js",
   "license": "MIT",
-  "changelog": {
-    "labels": {
-      "breaking": ":boom: Breaking Change",
-      "enhancement": ":rocket: Enhancement",
-      "bug": ":bug: Bug Fix",
-      "documentation": ":memo: Documentation",
-      "internal": ":house: Internal"
-    },
-    "cacheDir": ".changelog"
-  },
   "dependencies": {
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {
-    "react": "^16.5.2"
-  },
-  "gitHead": "0b0ff02c6391cd0e09674d4c7e54ed84d00515f5"
+    "react": "*"
+  }
 }

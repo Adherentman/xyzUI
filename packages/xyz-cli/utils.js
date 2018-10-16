@@ -1,14 +1,12 @@
-const fs = require('fs');
-const path = require('path');
-const chalk = require('chalk');
-const mkdirp = require('mkdirp');
+const fs = require('fs-extra')
 
-const cwd = process.cwd();
-const { log, error } = console;
+const { log } = console
+const cwd = process.cwd()
 
 const utils = {
-  writeFile(){}
+	createComponent() {
 
+	},
 }
 
 module.exports = utils;
