@@ -7,6 +7,6 @@
   "semi": false,
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
-  "arrowParens": "always",
+  "arrowParens": "avoid",
   "parser": "babylon"
 }

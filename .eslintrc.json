@@ -27,6 +27,7 @@
         "semi": "off",
         "no-tabs": "off",
         "indent": ["error", "tab"],
-        "no-restricted-syntax": "off"
+				"no-restricted-syntax": "off",
+				"implicit-arrow-linebreak": ["error", "beside"]
     }
 }
