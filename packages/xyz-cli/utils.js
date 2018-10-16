@@ -1,12 +1,10 @@
-const fs = require('fs-extra')
+// const fs = require('fs-extra')
 
-const { log } = console
-const cwd = process.cwd()
+// const { log } = console
+// const cwd = process.cwd()
 
 const utils = {
-	createComponent() {
-
-	},
+	createComponent() {},
 }
 
-module.exports = utils;
+module.exports = utils
