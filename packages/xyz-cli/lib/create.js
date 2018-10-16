@@ -14,7 +14,4 @@ async function create(componentName) {
 	}
 }
 
-module.exports = (...args) =>
-	create(...args).catch((err) => {
-		error(err)
-	})
+module.exports = (...args) => create(...args).catch((err) => error(err))
