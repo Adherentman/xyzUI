@@ -1,13 +1,17 @@
 import React from 'react'
+import styled from 'styled-components'
 
-class Typography extends React.Component {
+const Typography = styled.div``
+
+class TypographyComponent extends React.Component {
 	render() {
 		return (
 			<div>
 				<a href="/">test4！</a>
+				<Typography />
 			</div>
 		)
 	}
 }
 
-export default Typography
+export default TypographyComponent
