@@ -28,6 +28,7 @@
         "no-tabs": "off",
         "indent": ["error", "tab"],
 				"no-restricted-syntax": "off",
-				"implicit-arrow-linebreak": ["error", "beside"]
+				"implicit-arrow-linebreak": ["error", "beside"],
+				"comma-dangle": ["error", "never"]
     }
 }
