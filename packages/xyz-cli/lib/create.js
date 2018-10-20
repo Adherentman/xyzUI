@@ -1,18 +1,17 @@
 const fsExtra = require('fs-extra')
 const fs = require('fs')
-const { writeFile } = require('fs').promises
-const chalk = require('chalk')
 const inquirer = require('inquirer')
-const pkgData = require('./generators/package.json.generator')
-const webPackTpl = require('./generators/webpack.generator')
 const logger = require('./logger')
+const templateComponentFile = require('./generators/templateComponentFile')
 
 const cwd = process.cwd()
 const { log, error } = console
 
 async function create(componentName) {
 	const dirPath = `${cwd}/${componentName}`
-	logger.info('Create', `create ${componentName} Start!`)
+
+	logger.info('First', `create ${componentName}!`)
+
 	try {
 		if (fs.existsSync(dirPath)) {
 			log()
@@ -22,18 +21,17 @@ async function create(componentName) {
 						type: 'confirm',
 						name: 'empty',
 						message: "This directory isn't empty, empty it?",
-						default: true,
 					}
 				])
 				.then((answers) => {
 					if (!answers.empty) {
 						process.exit(0)
 					} else {
-						log(chalk.bold.cyan('is emptying this directory...'))
+						logger.info('Second', 'is emptying this directory...')
 						fsExtra.removeSync(dirPath)
 						logger.info(
-							'Create',
-							`empty successful，create ${componentName} Start!`
+							'Third',
+							`empty successful，Start creating ${componentName} files!`
 						)
 						fsExtra.ensureDirSync(dirPath)
 					}
@@ -41,15 +39,7 @@ async function create(componentName) {
 		} else {
 			await fsExtra.ensureDir(dirPath)
 		}
-		await writeFile(
-			`${dirPath}/${webPackTpl().filename}`,
-			webPackTpl(componentName).contents
-		)
-		await writeFile(
-			`${dirPath}/${pkgData().filename}`,
-			pkgData(componentName).contents
-		)
-		// logger.success('Create success')
+		await templateComponentFile(dirPath, componentName)
 	} catch (err) {
 		error(err)
 	}
