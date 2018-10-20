@@ -23,9 +23,9 @@ async function create(componentName) {
 						name: 'empty',
 						message: "This directory isn't empty, empty it?",
 						default: true,
-					},
+					}
 				])
-				.then(answers => {
+				.then((answers) => {
 					if (!answers.empty) {
 						process.exit(0)
 					} else {

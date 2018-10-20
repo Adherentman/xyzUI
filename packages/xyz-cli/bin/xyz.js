@@ -28,7 +28,7 @@ program.version(require('../package').version).usage('<command> [options]')
 program
 	.command('create <component-name>')
 	.description('create component template')
-	.action(name => {
+	.action((name) => {
 		/* eslint-disable global-require */
 		require('../lib/create')(name)
 	})
