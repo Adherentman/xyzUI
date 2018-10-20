@@ -1,28 +1,46 @@
-const chalk = require('chalk')
-const fsPro = require('fs-extra')
+const fsExtra = require('fs-extra')
+const fs = require('fs')
 const { writeFile } = require('fs').promises
+const chalk = require('chalk')
+const inquirer = require('inquirer')
 const pkgData = require('./generators/package.json.generator')
 const webPackTpl = require('./generators/webpack.generator')
+const logger = require('./logger')
 
-const { log, error } = console
 const cwd = process.cwd()
-
-// async function writeWebpackConfigFile(componentName) {
-// 	try {
-// 		await fs.outputFile(
-// 			`${cwd}/${componentName}/${componentName}.webpack.js`,
-// 			webpackFile
-// 		)
-// 	} catch (err) {
-// 		error(err)
-// 	}
-// }
+const { log, error } = console
 
 async function create(componentName) {
 	const dirPath = `${cwd}/${componentName}`
-	log(chalk.green(`create ${componentName} Start!`))
+	logger.info('Create', `create ${componentName} Start!`)
 	try {
-		await fsPro.ensureDir(dirPath)
+		if (fs.existsSync(dirPath)) {
+			log()
+			inquirer
+				.prompt([
+					{
+						type: 'confirm',
+						name: 'empty',
+						message: "This directory isn't empty, empty it?",
+						default: true,
+					},
+				])
+				.then(answers => {
+					if (!answers.empty) {
+						process.exit(0)
+					} else {
+						log(chalk.bold.cyan('is emptying this directory...'))
+						fsExtra.removeSync(dirPath)
+						logger.info(
+							'Create',
+							`empty successful，create ${componentName} Start!`
+						)
+						fsExtra.ensureDirSync(dirPath)
+					}
+				})
+		} else {
+			await fsExtra.ensureDir(dirPath)
+		}
 		await writeFile(
 			`${dirPath}/${webPackTpl().filename}`,
 			webPackTpl(componentName).contents
@@ -31,7 +49,7 @@ async function create(componentName) {
 			`${dirPath}/${pkgData().filename}`,
 			pkgData(componentName).contents
 		)
-		log(chalk.cyan('Create success'))
+		// logger.success('Create success')
 	} catch (err) {
 		error(err)
 	}
