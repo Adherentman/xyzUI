@@ -8,7 +8,7 @@ module.exports = async (dirPath, componentName) => {
 	// webpack.config.js TemplateFile
 	await writeFile(
 		`${dirPath}/${webPackTpl().filename}`,
-		webPackTpl(componentName, `xyz-ui-${componentName}`).contents
+		webPackTpl(componentName).contents
 	).catch(err => error(err))
 	// package.json TemplateFile
 	await writeFile(

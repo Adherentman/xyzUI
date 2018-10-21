@@ -1,4 +1,4 @@
-module.exports = (entryName, libraryName) => ({
+module.exports = entryName => ({
 	filename: 'webpack.config.js',
 	contents: `const path = require('path')
 
@@ -8,7 +8,7 @@ module.exports = {
 	output: {
 		path: path.join(__dirname, 'lib'),
 		filename: 'index.js',
-		library: '${libraryName}',
+		library: '${entryName}',
 		libraryTarget: 'umd',
 	},
 	externals: {

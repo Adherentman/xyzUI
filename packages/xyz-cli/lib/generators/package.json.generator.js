@@ -3,6 +3,7 @@ module.exports = config => ({
 	contents: `{
 		"name": "@xyz-ui/${config}",
 		"version": "0.0.1",
+		"main": "./lib/index.js",
 		"repository": {
 			"type": "git",
 			"url": "git+https://github.com/Adherentman/xyzUI"

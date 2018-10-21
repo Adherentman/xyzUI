@@ -1,3 +1,3 @@
-const { log } = console
+import Typography from './src/Typography'
 
-log('typography!')
+export default Typography

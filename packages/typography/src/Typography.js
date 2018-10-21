@@ -1,13 +1,16 @@
 import React from 'react'
+import styles from './styles/style.scss'
 
-class TypographyComponent extends React.Component {
+class Typography extends React.Component {
 	render() {
 		return (
 			<div>
-				<a href="/">test4！</a>
+				<a href="/" className={styles.test}>
+					test4！
+				</a>
 			</div>
 		)
 	}
 }
 
-export default TypographyComponent
+export default Typography
