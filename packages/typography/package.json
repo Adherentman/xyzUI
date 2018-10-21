@@ -1,5 +1,5 @@
 {
-  "name": "xyz-component-typography",
+  "name": "xyz-ui-typography",
   "version": "0.0.6",
   "main": "./lib/index.js",
   "license": "MIT",
@@ -8,5 +8,6 @@
   },
   "peerDependencies": {
     "react": "^16.5.2"
-  }
+  },
+  "gitHead": "ad7d05641f14ccc1904cbe7adc98232ed6d5c2cc"
 }
