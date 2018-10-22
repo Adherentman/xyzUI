@@ -1,13 +1,14 @@
 const path = require('path')
+const CleanWebpackPlugin = require('clean-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const webpack = require('webpack')
 
 module.exports = {
-	mode: 'development',
-	entry: './packages/typography/index.js',
+	entry: path.join(__dirname, '../src/index.js'),
 	output: {
-		path: path.join(__dirname, 'lib'),
-		filename: 'index.js',
-		library: 'ty',
-		libraryTarget: 'umd',
+		path: path.join(__dirname, 'dist'),
+		publicPath: '/',
+		filename: 'bundle.js',
 	},
 	module: {
 		rules: [
@@ -25,7 +26,7 @@ module.exports = {
 				test: /\.scss$/,
 				use: [
 					'style-loader', // creates style nodes from JS strings
-					'css-loader?minimize&modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]', // translates CSS into CommonJS
+					'css-loader', // translates CSS into CommonJS
 					'sass-loader' // compiles Sass to CSS, using Node Sass by default
 				],
 			}
@@ -37,4 +38,12 @@ module.exports = {
 	resolve: {
 		extensions: ['.js', '.jsx'],
 	},
+	plugins: [
+		new CleanWebpackPlugin(['dist/*']),
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, '../src/index.html'),
+		}),
+		new webpack.NamedModulesPlugin(),
+		new webpack.HotModuleReplacementPlugin() // 启用HMR
+	],
 }

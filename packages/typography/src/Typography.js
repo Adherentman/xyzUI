@@ -4,11 +4,9 @@ import styles from './styles/style.scss'
 class Typography extends React.Component {
 	render() {
 		return (
-			<div>
-				<a href="/" className={styles.test}>
-					test4！
-				</a>
-			</div>
+			<React.Fragment>
+				<p className={styles.test}>test4！</p>
+			</React.Fragment>
 		)
 	}
 }
