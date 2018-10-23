@@ -20,10 +20,7 @@ function Typography(props) {
 
 	return (
 		<React.Fragment>
-			<span className={typographyStyle}>
-				test4！
-				{children}
-			</span>
+			<span className={typographyStyle}>{children}</span>
 		</React.Fragment>
 	)
 }

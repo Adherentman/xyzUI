@@ -2,11 +2,12 @@
   "name": "xyz-ui",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --open --config ./config/webpack.dev.js",
+		"dev": "webpack-dev-server --open --config ./config/webpack.dev.js",
+		"build:allComponent": "node build/bin/build-all.js",
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "cz": "git-cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "publish": "lerna publish"
   },
   "repository": {
