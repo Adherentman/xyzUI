@@ -31,9 +31,6 @@ class App extends React.Component {
 				<div>
 					<Typography size="Body">hhh</Typography>
 				</div>
-				<div>
-					<Typography size="Button">hhh</Typography>
-				</div>
 			</React.Fragment>
 		)
 	}
