@@ -5,6 +5,7 @@
 ### Features
 
 * **test:** test ([65d4380](https://github.com/Adherentman/xyzUI/commit/65d4380))
+* **test5:** test5 ([7f6dbcb](https://github.com/Adherentman/xyzUI/commit/7f6dbcb))
 * **typography:** complete size props ([688413d](https://github.com/Adherentman/xyzUI/commit/688413d))
 * **typography:** complete size props ([bc3a173](https://github.com/Adherentman/xyzUI/commit/bc3a173))
 
