@@ -17,7 +17,6 @@ function Typography(props) {
 		[styles.sizeBody]: size === 'Body',
 		[styles.sizeButton]: size === 'Button',
 	})
-
 	return (
 		<React.Fragment>
 			<span className={typographyStyle}>{children}</span>
