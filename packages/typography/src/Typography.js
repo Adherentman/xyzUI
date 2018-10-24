@@ -7,16 +7,17 @@ function Typography(props) {
 	const { children, size } = props
 
 	const typographyStyle = classNames(styles.typographyFont, {
-		[styles.sizeH1]: size === 'H1',
-		[styles.sizeH2]: size === 'H2',
-		[styles.sizeH3]: size === 'H3',
-		[styles.sizeH4]: size === 'H4',
-		[styles.sizeH5]: size === 'H5',
-		[styles.sizeH6]: size === 'H6',
-		[styles.sizeTitle]: size === 'Title',
-		[styles.sizeBody]: size === 'Body',
-		[styles.sizeButton]: size === 'Button',
+		[styles.sizeH1]: size === 'h1',
+		[styles.sizeH2]: size === 'h2',
+		[styles.sizeH3]: size === 'h3',
+		[styles.sizeH4]: size === 'h4',
+		[styles.sizeH5]: size === 'h5',
+		[styles.sizeH6]: size === 'h6',
+		[styles.sizeTitle]: size === 'title',
+		[styles.sizeBody]: size === 'body',
+		[styles.sizeButton]: size === 'button',
 	})
+
 	return (
 		<React.Fragment>
 			<span className={typographyStyle}>{children}</span>
@@ -26,7 +27,17 @@ function Typography(props) {
 
 Typography.propTypes = {
 	children: PropTypes.node.isRequired,
-	size: PropTypes.string,
+	size: PropTypes.oneOf([
+		'h1',
+		'h2',
+		'h3',
+		'h4',
+		'h5',
+		'h6',
+		'title',
+		'body',
+		'button'
+	]),
 }
 
 Typography.defaultProps = {
