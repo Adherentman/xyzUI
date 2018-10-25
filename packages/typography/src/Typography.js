@@ -3,19 +3,20 @@ import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import styles from './styles/style.scss'
 
+// 首字母大写
+function capitalize(string) {
+	return string.charAt(0).toUpperCase() + string.slice(1)
+}
+
 function Typography(props) {
-	const { children, size } = props
+	const {
+		children, size, align, noWarp
+	} = props
 
 	const typographyStyle = classNames(styles.typographyFont, {
-		[styles.sizeH1]: size === 'h1',
-		[styles.sizeH2]: size === 'h2',
-		[styles.sizeH3]: size === 'h3',
-		[styles.sizeH4]: size === 'h4',
-		[styles.sizeH5]: size === 'h5',
-		[styles.sizeH6]: size === 'h6',
-		[styles.sizeTitle]: size === 'title',
-		[styles.sizeBody]: size === 'body',
-		[styles.sizeButton]: size === 'button',
+		[styles[`size${capitalize(size)}`]]: size !== '',
+		[styles[`tx${capitalize(align)}`]]: align !== 'inherit',
+		[styles.noWarp]: noWarp,
 	})
 
 	return (
@@ -38,10 +39,14 @@ Typography.propTypes = {
 		'body',
 		'button'
 	]),
+	align: PropTypes.oneOf(['inherit', 'center', 'left', 'right', 'justify']),
+	noWarp: PropTypes.bool,
 }
 
 Typography.defaultProps = {
 	size: '',
+	align: 'inherit',
+	noWarp: false,
 }
 
 export default Typography

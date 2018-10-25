@@ -4,7 +4,7 @@
   "version": "0.0.4",
   "description": "develompent tools",
   "bin": {
-    "xyz": "bin/xyz.js"
+    "xyz": "bin/xyz"
   },
   "main": "index.js",
   "author": "xzh",

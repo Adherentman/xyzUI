@@ -8,11 +8,13 @@ module.exports = config => ({
 			"type": "git",
 			"url": "git+https://github.com/Adherentman/xyzUI"
 		},
+		"license": "MIT",
 		"dependencies": {
+			"classnames": "^2.2.6",
 			"prop-types": "^15.6.2"
 		},
 		"peerDependencies": {
-			"react": "*"
+			"react": "^16.5.2"
 		}
 	}
 `,
