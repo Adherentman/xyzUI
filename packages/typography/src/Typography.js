@@ -8,7 +8,7 @@ function capitalize(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-function Typography(props) {
+const Typography = (props) => {
 	const {
 		children, size, align, noWarp
 	} = props
@@ -27,7 +27,9 @@ function Typography(props) {
 }
 
 Typography.propTypes = {
+	/** children */
 	children: PropTypes.node.isRequired,
+	/** size big */
 	size: PropTypes.oneOf([
 		'h1',
 		'h2',
@@ -39,7 +41,9 @@ Typography.propTypes = {
 		'body',
 		'button'
 	]),
+	/** align */
 	align: PropTypes.oneOf(['inherit', 'center', 'left', 'right', 'justify']),
+	/** nowarp */
 	noWarp: PropTypes.bool,
 }
 

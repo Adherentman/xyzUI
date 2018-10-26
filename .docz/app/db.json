@@ -1,0 +1,56 @@
+{
+  "config": {
+    "title": "Xyz-UI",
+    "description": "UI library for React",
+    "themeConfig": {},
+    "menu": [],
+    "ordering": "ascending",
+    "repository": "https://github.com/Adherentman/xyzUI",
+    "native": false,
+    "propsParser": false,
+    "plugins": [
+      {}
+    ]
+  },
+  "entries": {
+    "docs/Home.mdx": {
+      "name": "Home",
+      "route": "/",
+      "order": -1,
+      "id": "f3241200b3e85b3b919f9d8df3bf19ca",
+      "filepath": "docs/Home.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/Home.mdx",
+      "slug": "docs-home",
+      "menu": null,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "hello-world",
+          "value": "Hello world"
+        }
+      ]
+    },
+    "docs/components/Typography.mdx": {
+      "name": "Typography",
+      "menu": "Components",
+      "id": "7fc1ad3eee13a8e66253430b9ec0e05a",
+      "filepath": "docs/components/Typography.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/components/Typography.mdx",
+      "slug": "docs-components-typography",
+      "route": "/docs-components-typography",
+      "order": 0,
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "typography",
+          "value": "Typography"
+        },
+        {
+          "depth": 1,
+          "slug": "props",
+          "value": "Props"
+        }
+      ]
+    }
+  }
+}
