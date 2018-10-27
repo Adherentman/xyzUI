@@ -7,7 +7,6 @@
     "ordering": "ascending",
     "repository": "https://github.com/Adherentman/xyzUI",
     "native": false,
-    "propsParser": false,
     "plugins": [
       {}
     ]
@@ -30,6 +29,17 @@
         }
       ]
     },
+    "docs/components/Button.mdx": {
+      "name": "Button",
+      "menu": "Components",
+      "id": "8661b6981e2294626dd24685bfd3582b",
+      "filepath": "docs/components/Button.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/components/Button.mdx",
+      "slug": "docs-components-button",
+      "route": "/docs-components-button",
+      "order": 0,
+      "headings": []
+    },
     "docs/components/Typography.mdx": {
       "name": "Typography",
       "menu": "Components",
@@ -46,9 +56,24 @@
           "value": "Typography"
         },
         {
-          "depth": 1,
-          "slug": "props",
-          "value": "Props"
+          "depth": 2,
+          "slug": "sizes",
+          "value": "Sizes"
+        },
+        {
+          "depth": 2,
+          "slug": "aligns",
+          "value": "Aligns"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        },
+        {
+          "depth": 3,
+          "slug": "typography-1",
+          "value": "Typography"
         }
       ]
     }

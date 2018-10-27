@@ -27,9 +27,9 @@ const Typography = (props) => {
 }
 
 Typography.propTypes = {
-	/** children */
+	/** The content of the component. */
 	children: PropTypes.node.isRequired,
-	/** size big */
+	/** Applies the theme typography styles.  */
 	size: PropTypes.oneOf([
 		'h1',
 		'h2',
@@ -41,9 +41,9 @@ Typography.propTypes = {
 		'body',
 		'button'
 	]),
-	/** align */
+	/** Set the text-align on the component. */
 	align: PropTypes.oneOf(['inherit', 'center', 'left', 'right', 'justify']),
-	/** nowarp */
+	/** If true, the text will not wrap, but instead will truncate with an ellipsis. */
 	noWarp: PropTypes.bool,
 }
 

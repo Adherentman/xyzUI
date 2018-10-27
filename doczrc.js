@@ -4,7 +4,6 @@ export default {
 	title: 'Xyz-UI',
 	description: 'UI library for React',
 	repository: 'https://github.com/Adherentman/xyzUI',
-	propsParser: false,
 	ordering: 'ascending',
 	plugins: [
 		css({

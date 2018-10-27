@@ -8,15 +8,36 @@ import Typography from '../../packages/typography/src/Typography'
 
 # Typography
 
+## Sizes
+
+Set font-size using `size` prop.
+
 <Playground>
-	<Typography size="h1">标题1!</Typography>
-	<Typography size="h2">标题2!</Typography>
-	<Typography size="h3">标题3!</Typography>
-	<Typography size="h4">标题4!</Typography>
-	<Typography size="h5">标题5!</Typography>
-	<Typography size="h6">标题6!</Typography>
+	<Typography size="h1">h1.heading1</Typography>
+	<Typography size="h2">h2.heading2</Typography>
+	<Typography size="h3">h3.heading3</Typography>
+	<Typography size="h4">h4.heading4</Typography>
+	<Typography size="h5">h5.heading5</Typography>
+	<Typography size="h6">h6.heading6</Typography>
+	<Typography size="title">普通标题!title</Typography>
+	<Typography size="body">主体!body</Typography>
+	<Typography size="button">按钮!button</Typography>
 </Playground>
 
-# Props
+## Aligns
+
+Set text-align using `align` prop.
+
+<Playground>
+	<Typography align="inhert">初始状态!</Typography>
+	<Typography align="center">在中间!</Typography>
+	<Typography align="left">在左边!</Typography>
+	<Typography align="right">在右边!</Typography>
+</Playground>
+
+
+## API
+
+### Typography
 
 <PropsTable of={Typography}/>
