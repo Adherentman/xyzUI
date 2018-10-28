@@ -1,14 +1,21 @@
-import React from 'react'
+import * as React from 'react'
 import classNames from 'classnames'
-import PropTypes from 'prop-types'
+import * as PropTypes from 'prop-types'
 import styles from './styles/style.scss'
 
+interface ITypographyProps {
+	children: React.ReactNode,
+	size: string,
+	align: string,
+	noWarp: boolean
+}
+
 // 首字母大写
-function capitalize(string) {
+function capitalize(string: string) {
 	return string.charAt(0).toUpperCase() + string.slice(1)
 }
 
-const Typography = (props) => {
+const Typography: React.SFC<ITypographyProps> = (props) => {
 	const {
 		children, size, align, noWarp
 	} = props

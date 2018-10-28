@@ -1,8 +1,9 @@
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
 
 module.exports = {
 	mode: 'development',
-	entry: './packages/typography/index.js',
+	entry: './packages/typography/index.ts',
 	output: {
 		path: path.join(__dirname, 'lib'),
 		filename: 'index.js',
@@ -11,14 +12,22 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			// {
+			// 	test: /\.js$/,
+			// 	exclude: /(node_modules|bower_components)/,
+			// 	use: {
+			// 		loader: 'babel-loader',
+			// 		options: {
+			// 			presets: ['@babel/preset-env', '@babel/preset-react'],
+			// 		},
+			// 	},
+			// },
 			{
-				test: /\.js$/,
-				exclude: /(node_modules|bower_components)/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-env', '@babel/preset-react'],
-					},
+				test: /\.tsx?$/,
+				loader: 'ts-loader',
+				options: {
+					// disable type checker - we will use it in fork plugin
+					transpileOnly: true,
 				},
 			},
 			{
@@ -35,6 +44,7 @@ module.exports = {
 		React: 'react',
 	},
 	resolve: {
-		extensions: ['.js', '.jsx'],
+		extensions: ['.js', '.jsx', '.ts', '.tsx'],
 	},
+	plugins: [new ForkTsCheckerWebpackPlugin()],
 }
