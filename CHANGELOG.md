@@ -1,5 +1,5 @@
 <a name=""></a>
-#  (2018-10-26)
+#  (2018-10-31)
 
 
 ### Features
@@ -10,6 +10,10 @@
 * **typography:** big change ([e07de28](https://github.com/Adherentman/xyzUI/commit/e07de28))
 * **typography:** complete size props ([688413d](https://github.com/Adherentman/xyzUI/commit/688413d))
 * **typography:** complete size props ([bc3a173](https://github.com/Adherentman/xyzUI/commit/bc3a173))
+* **use ts:** finsh typography ([3732610](https://github.com/Adherentman/xyzUI/commit/3732610))
+* **use ts:** use ts write component ([da38147](https://github.com/Adherentman/xyzUI/commit/da38147))
+* **use ts:** use ts write component ([56a6847](https://github.com/Adherentman/xyzUI/commit/56a6847))
+* **use ts:** use ts write component ([dd9f62a](https://github.com/Adherentman/xyzUI/commit/dd9f62a))
 
 
 ### Tests
