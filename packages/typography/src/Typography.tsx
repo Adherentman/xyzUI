@@ -4,7 +4,9 @@ import * as PropTypes from 'prop-types'
 import styles from './styles/style.scss'
 
 interface ITypographyProps {
-	/** The content of the component. */
+	/**
+	 * The content of the component.
+	 */
 	children: React.ReactNode;
 	/**
 	 * Applies the theme typography styles.
