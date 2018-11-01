@@ -10,7 +10,7 @@ npm install xyz-ui-typography
 
 ## Usage
 
-```javascript
+```jsx
 <Typography size="h1">h1.heading1</Typography>
 <Typography size="h2">h2.heading2</Typography>
 <Typography size="h3">h3.heading3</Typography>
