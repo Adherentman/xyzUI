@@ -73,6 +73,11 @@
         },
         {
           "depth": 2,
+          "slug": "component",
+          "value": "Component"
+        },
+        {
+          "depth": 2,
           "slug": "api",
           "value": "API"
         },
