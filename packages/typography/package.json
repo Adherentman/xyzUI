@@ -9,7 +9,7 @@
     "prop-types": "^15.6.2"
   },
   "peerDependencies": {
-    "react": "^16.5.2"
+    "react": ">16.5.2"
   },
   "gitHead": "ad7d05641f14ccc1904cbe7adc98232ed6d5c2cc",
   "devDependencies": {

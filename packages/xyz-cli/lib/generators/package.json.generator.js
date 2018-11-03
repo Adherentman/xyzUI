@@ -4,6 +4,7 @@ module.exports = config => ({
 		"name": "@xyz-ui/${config}",
 		"version": "0.0.1",
 		"main": "./lib/index.js",
+		"module": "./index.ts",
 		"repository": {
 			"type": "git",
 			"url": "git+https://github.com/Adherentman/xyzUI"
@@ -14,7 +15,7 @@ module.exports = config => ({
 			"prop-types": "^15.6.2"
 		},
 		"peerDependencies": {
-			"react": "^16.5.2"
+			"react": ">16.5.2"
 		}
 	}
 `,

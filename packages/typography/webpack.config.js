@@ -2,26 +2,16 @@ const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 	entry: './packages/typography/index.ts',
 	output: {
 		path: path.join(__dirname, 'lib'),
 		filename: 'index.js',
-		library: 'ty',
+		library: 'xyz-ui-typography',
 		libraryTarget: 'umd',
 	},
 	module: {
 		rules: [
-			// {
-			// 	test: /\.js$/,
-			// 	exclude: /(node_modules|bower_components)/,
-			// 	use: {
-			// 		loader: 'babel-loader',
-			// 		options: {
-			// 			presets: ['@babel/preset-env', '@babel/preset-react'],
-			// 		},
-			// 	},
-			// },
 			{
 				test: /\.tsx?$/,
 				loader: 'ts-loader',
