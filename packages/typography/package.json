@@ -10,7 +10,7 @@
   "peerDependencies": {
     "react": ">16.5.2"
   },
-  "gitHead": "ad7d05641f14ccc1904cbe7adc98232ed6d5c2cc",
+  "gitHead": "5ce93a3c63d8f69935b81c7aa4183013528f8100",
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/prop-types": "^15.5.6",
