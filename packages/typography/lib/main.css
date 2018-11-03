@@ -1,0 +1,89 @@
+.style_typographyFont_2seBI {
+  display: block;
+  margin: 0; }
+
+.style_sizeH1_2C2MZ {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 6rem;
+  line-height: 1;
+  letter-spacing: -0.01562em; }
+
+.style_sizeH2_3kF1X {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 3.75rem;
+  line-height: 1;
+  letter-spacing: 0em;
+  letter-spacing: -0.00833em; }
+
+.style_sizeH3_Op4g2 {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.04;
+  letter-spacing: 0em; }
+
+.style_sizeH4_3q7cC {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 2.125rem;
+  line-height: 1.17;
+  letter-spacing: 0.00735em; }
+
+.style_sizeH5_3gaem {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  letter-spacing: 0em; }
+
+.style_sizeH6_Yd2g4 {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  letter-spacing: 0.00735em; }
+
+.style_sizeTitle_BgbfK {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2;
+  letter-spacing: 0.00938em; }
+
+.style_sizeBody_1ucnu {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.57;
+  letter-spacing: 0.01071em; }
+
+.style_sizeButton_1p9ik {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase; }
+
+.style_txCenter_3lEn- {
+  text-align: center; }
+
+.style_txLeft_36YzK {
+  text-align: left; }
+
+.style_txRight_1-WiC {
+  text-align: right; }
+
+.style_txInherit_mx_jq {
+  text-align: inherit; }
+
+.style_txJustify_3Rm3d {
+  text-align: justify; }
+
+.style_noWarp_xpbbL {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+

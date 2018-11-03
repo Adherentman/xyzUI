@@ -2,10 +2,11 @@
   "compilerOptions": {
 		"experimentalDecorators": true,
 		"moduleResolution": "node",
+		"declaration": true,
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "jsx": "react",
+    "jsx": "preserve",
 		"allowJs": false,
 		"lib": [
 			"dom",
