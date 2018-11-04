@@ -1,6 +1,6 @@
 module.exports = config => ({
-	filename: 'package.json',
-	contents: `{
+  filename: 'package.json',
+  contents: `{
 		"name": "@xyz-ui/${config}",
 		"version": "0.0.1",
 		"main": "./lib/index.js",
@@ -18,5 +18,5 @@ module.exports = config => ({
 			"react": ">16.5.2"
 		}
 	}
-`,
+`
 })
