@@ -13,7 +13,7 @@
   "peerDependencies": {
     "react": ">16.5.2"
   },
-  "gitHead": "5ce93a3c63d8f69935b81c7aa4183013528f8100",
+  "gitHead": "4cc9ad5ab51e25a74457eb189450aa39ee25cae7",
   "devDependencies": {
     "@types/classnames": "^2.2.6",
     "@types/prop-types": "^15.5.6",
