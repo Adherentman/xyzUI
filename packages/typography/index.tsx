@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { typographyStyle, ItypographyStyle } from './styles/style';
 
-interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
+interface ITypographyProps {
 	/**
 	 * The content of the component.
 	 */
@@ -11,12 +11,12 @@ interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
 	/**
 	 * The element
 	 */
-	component: string | React.ComponentType;
+	component?: string | React.ComponentType;
 	/**
 	 * Applies the theme typography styles.
 	 * @default ''
 	 */
-	size:
+	size?:
 		| ''
 		| 'h1'
 		| 'h2'
@@ -31,12 +31,12 @@ interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
 	 * Set the text-align on the component.
 	 * @default inherit
 	 */
-	align: string | 'inherit' | 'center' | 'left' | 'right' | 'justify';
+	align?: string | 'inherit' | 'center' | 'left' | 'right' | 'justify';
 	/**
 	 * If true, the text will not wrap, but instead will truncate with an ellipsis.
 	 * @default boolean
 	 */
-	noWarp: boolean;
+	noWarp?: boolean;
 }
 
 // 首字母大写
@@ -44,14 +44,9 @@ function capitalize(str: string) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-const Typography: React.SFC<ITypographyProps> = ({
-	children,
-	component: Component,
-	size,
-	align,
-	noWarp,
-	...other
-}) => {
+const Typography: React.SFC<
+	ITypographyProps & React.HTMLAttributes<HTMLElement>
+> = ({ children, component: Component, size, align, noWarp, ...other }) => {
 	const typographyStyles = classNames(typographyStyle.typographyFont, {
 		[typographyStyle[`size${capitalize(size)}`]]: size !== '',
 		[typographyStyle[`tx${capitalize(align)}`]]: align !== 'inherit',

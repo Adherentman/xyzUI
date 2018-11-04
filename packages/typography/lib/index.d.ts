@@ -1,5 +1,5 @@
 import * as React from 'react';
-interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
+interface ITypographyProps {
 	/**
 	 * The content of the component.
 	 */
@@ -7,12 +7,12 @@ interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
 	/**
 	 * The element
 	 */
-	component: string | React.ComponentType;
+	component?: string | React.ComponentType;
 	/**
 	 * Applies the theme typography styles.
 	 * @default ''
 	 */
-	size:
+	size?:
 		| ''
 		| 'h1'
 		| 'h2'
@@ -27,12 +27,14 @@ interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
 	 * Set the text-align on the component.
 	 * @default inherit
 	 */
-	align: string | 'inherit' | 'center' | 'left' | 'right' | 'justify';
+	align?: string | 'inherit' | 'center' | 'left' | 'right' | 'justify';
 	/**
 	 * If true, the text will not wrap, but instead will truncate with an ellipsis.
 	 * @default boolean
 	 */
-	noWarp: boolean;
+	noWarp?: boolean;
 }
-declare const Typography: React.SFC<ITypographyProps>;
+declare const Typography: React.SFC<
+	ITypographyProps & React.HTMLAttributes<HTMLElement>
+>;
 export default Typography;
