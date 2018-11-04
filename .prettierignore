@@ -2,3 +2,5 @@ package.json
 package-lock.json
 tslint.json
 tsconfig.json
+.docz
+.vscode

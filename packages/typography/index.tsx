@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import classNames from 'classnames';
-import styles from './styles/style.scss';
+import { typographyStyle, ItypographyStyle } from './styles/style';
 
 interface ITypographyProps {
 	/**
@@ -31,7 +31,7 @@ interface ITypographyProps {
 	 * Set the text-align on the component.
 	 * @default inherit
 	 */
-	align: 'inherit' | 'center' | 'left' | 'right' | 'justify';
+	align: string | 'inherit' | 'center' | 'left' | 'right' | 'justify';
 	/**
 	 * If true, the text will not wrap, but instead will truncate with an ellipsis.
 	 * @default boolean
@@ -52,7 +52,7 @@ class Typography extends React.PureComponent<ITypographyProps, {}> {
 	};
 
 	public static propTypes = {
-		children: PropTypes.node.isRequired,
+		children: PropTypes.node,
 		/** Applies the theme typography styles.  */
 		size: PropTypes.oneOf([
 			'',
@@ -70,6 +70,7 @@ class Typography extends React.PureComponent<ITypographyProps, {}> {
 		align: PropTypes.oneOf(['inherit', 'center', 'left', 'right', 'justify']),
 		/** If true, the text will not wrap, but instead will truncate with an ellipsis. */
 		noWarp: PropTypes.bool,
+		component: PropTypes.any,
 	};
 
 	public render(): React.ReactNode {
@@ -82,13 +83,13 @@ class Typography extends React.PureComponent<ITypographyProps, {}> {
 			...other
 		} = this.props;
 
-		const typographyStyle = classNames(styles.typographyFont, {
-			[styles[`size${capitalize(size)}`]]: size !== '',
-			[styles[`tx${capitalize(align)}`]]: align !== 'inherit',
-			[styles.noWarp]: noWarp,
+		const typographyStyles = classNames(typographyStyle.typographyFont, {
+			[typographyStyle[`size${capitalize(size)}`]]: size !== '',
+			[typographyStyle[`tx${capitalize(align)}`]]: align !== 'inherit',
+			[typographyStyle.noWarp]: noWarp,
 		});
 		return (
-			<Component className={typographyStyle} {...other}>
+			<Component className={typographyStyles} {...other}>
 				{children}
 			</Component>
 		);
