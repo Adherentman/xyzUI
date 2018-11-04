@@ -1,9 +1,23 @@
 import * as React from 'react';
-import * as PropTypes from 'prop-types';
+// import * as PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { typographyStyle, ItypographyStyle } from './styles/style';
 
-interface ITypographyProps {
+export type Omit<T, K extends keyof any> = T extends any
+	? Pick<T, Exclude<keyof T, K>>
+	: never;
+
+export type StandardProps<
+	C,
+	ClassKey extends string,
+	Removals extends keyof C = never
+> = Omit<C, 'classes' | Removals> & {
+	className?: string;
+	style?: React.CSSProperties;
+};
+
+interface ITypographyProps
+	extends StandardProps<React.HTMLAttributes<HTMLElement>, any> {
 	/**
 	 * The content of the component.
 	 */
@@ -44,9 +58,14 @@ function capitalize(str: string) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-const Typography: React.SFC<
-	ITypographyProps & React.HTMLAttributes<HTMLElement>
-> = ({ children, component: Component, size, align, noWarp, ...other }) => {
+const Typography: React.SFC<ITypographyProps> = ({
+	children,
+	component: Component,
+	size,
+	align,
+	noWarp,
+	...other
+}) => {
 	const typographyStyles = classNames(typographyStyle.typographyFont, {
 		[typographyStyle[`size${capitalize(size)}`]]: size !== '',
 		[typographyStyle[`tx${capitalize(align)}`]]: align !== 'inherit',
