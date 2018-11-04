@@ -3,7 +3,7 @@ import * as PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { typographyStyle, ItypographyStyle } from './styles/style';
 
-interface ITypographyProps {
+interface ITypographyProps extends React.HTMLAttributes<HTMLElement> {
 	/**
 	 * The content of the component.
 	 */
@@ -37,7 +37,6 @@ interface ITypographyProps {
 	 * @default boolean
 	 */
 	noWarp: boolean;
-	other: any;
 }
 
 // 首字母大写
