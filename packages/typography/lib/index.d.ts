@@ -1,5 +1,5 @@
 import * as React from 'react';
-interface ITypographyProps {
+export interface ITypographyProps {
 	/**
 	 * The content of the component.
 	 */
@@ -7,7 +7,7 @@ interface ITypographyProps {
 	/**
 	 * The element
 	 */
-	component?: string | React.ComponentType;
+	component?: string | React.ComponentType<ITypographyProps>;
 	/**
 	 * Applies the theme typography styles.
 	 * @default ''
@@ -34,7 +34,5 @@ interface ITypographyProps {
 	 */
 	noWarp?: boolean;
 }
-declare const Typography: React.SFC<
-	ITypographyProps & React.HTMLAttributes<HTMLElement>
->;
+declare const Typography: React.SFC<ITypographyProps>;
 export default Typography;
