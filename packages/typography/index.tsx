@@ -37,6 +37,7 @@ interface ITypographyProps {
 	 * @default boolean
 	 */
 	noWarp: boolean;
+	other: any;
 }
 
 // 首字母大写
