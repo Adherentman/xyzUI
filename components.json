@@ -1,6 +1,3 @@
 {
-	"typography": "./packages/typography/index.js",
-	"b": "./packages/b/index.js",
-	"cc": "./packages/cc/index.js",
-	"dd": "./packages/dd/index.js"
+	"typography": "./packages/typography/index.js"
 }

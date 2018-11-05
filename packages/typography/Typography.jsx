@@ -48,11 +48,11 @@ Typography.propTypes = {
   /**
   * Applies the theme typography styles.
   */
-  size: PropTypes.any,
+  size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'title', 'body', 'button']),
   /**
   * Set the text-align on the component.
   */
-  align: PropTypes.any,
+  align: PropTypes.oneOf(['inherit', 'center', 'left', 'right', 'justify']),
   /**
   * If true, the text will not wrap, but instead will truncate with an ellipsis.
  */

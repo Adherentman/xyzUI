@@ -3,12 +3,11 @@
 		"outDir": "./lib",
 		"experimentalDecorators": true,
 		"moduleResolution": "node",
-		"declaration": true,
     "noImplicitAny": true,
     "module": "es6",
     "target": "es5",
-    "jsx": "preserve",
-		"allowJs": false,
+    "jsx": "react",
+		"allowJs": true,
 		"lib": [
 			"dom",
 			"es7"
