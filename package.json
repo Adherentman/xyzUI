@@ -17,7 +17,7 @@
     "url": "git+https://github.com/Adherentman/xyzUI"
   },
   "lint-staged": {
-    "*.tsx": [
+    "*.jsx": [
       "pretty-quick --staged",
       "standard --fix",
       "git add"
