@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
-import { typographyStyle } from './styles/style'
+import { typographyStyle } from '../styles/style'
 
 // 首字母大写
 function capitalize (str) {

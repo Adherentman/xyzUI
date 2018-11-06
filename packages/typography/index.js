@@ -1,3 +1,3 @@
-import Typography from './Typography'
+import Typography from './src/Typography'
 
 export default Typography

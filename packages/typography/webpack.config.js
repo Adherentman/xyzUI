@@ -1,4 +1,3 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const path = require('path')
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'lib'),
     filename: 'index.js',
-    library: 'xyz-ui-typography',
+    library: '@xyz-ui/typography',
     libraryTarget: 'umd'
   },
   module: {
@@ -35,16 +34,6 @@ module.exports = {
           ]
         },
         exclude: /node_modules/
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          // 'style-loader',
-          MiniCssExtractPlugin.loader,
-          // creates style nodes from JS strings
-          'css-loader?minimize&modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]', // translates CSS into CommonJS
-          'sass-loader' // compiles Sass to CSS, using Node Sass by default
-        ]
       }
     ]
   },
@@ -57,12 +46,6 @@ module.exports = {
     }
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css'
-    })
-  ]
+    extensions: ['.js', '.jsx']
+  }
 }

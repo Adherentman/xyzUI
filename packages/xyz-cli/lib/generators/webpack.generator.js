@@ -3,42 +3,54 @@ module.exports = entryName => ({
   contents: `const path = require('path')
 
 module.exports = {
-	mode: 'production',
-	entry: './packages/${entryName}/index.js',
-	output: {
-		path: path.join(__dirname, 'lib'),
-		filename: 'index.js',
-		library: '${entryName}',
-		libraryTarget: 'umd',
-	},
-	module: {
-		rules: [
-			{
-				test: ${/\.js$/},
-				exclude: /(node_modules|bower_components)/,
-				use: {
-					loader: 'babel-loader',
-					options: {
-						presets: ['@babel/preset-env', '@babel/preset-react'],
-					},
-				},
-			},
-			{
-				test: ${/\.scss$/},
-				use: [
-					'style-loader',
-					'css-loader?minimize&modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
-					'sass-loader'
-				],
-			}
-		],
-	},
-	externals: {
-		React: 'react',
-	},
-	resolve: {
-		extensions: ['.js', '.jsx'],
-	},
+  mode: 'production',
+  entry: './packages/${entryName}/index.js',
+  output: {
+    path: path.join(__dirname, 'lib'),
+    filename: 'index.js',
+    library: '@xyz-ui/${entryName}',
+    libraryTarget: 'umd',
+  },
+  module: {
+    rules: [
+      {
+        test: ${/\.(js|jsx)$/},
+        loader: 'babel-loader',
+        options: {
+          presets: [['@babel/preset-env', {
+            'targets': {
+              'browsers': [
+                'last 2 versions',
+                'Firefox ESR',
+                '> 1%',
+                'ie >= 9',
+                'iOS >= 8',
+                'Android >= 4'
+              ]
+            }
+          }],
+          '@babel/preset-react'],
+          plugins: [
+            'emotion',
+            '@babel/plugin-proposal-object-rest-spread'
+          ]
+        },
+        exclude: ${/node_modules/}
+      }
+    ]
+  },
+  externals: {
+    react: {
+      root: 'React',
+      commonjs2: 'react',
+      commonjs: 'react',
+      amd: 'react'
+    }
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  plugins: [,
 }
 `
 })

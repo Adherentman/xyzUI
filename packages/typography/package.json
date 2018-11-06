@@ -1,8 +1,19 @@
 {
-  "name": "xyz-ui-typography",
+  "name": "@xyz-ui/typography",
   "version": "0.1.13",
+  "author": "xzh",
   "main": "./lib/index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adherentman/xyzUI"
+  },
+  "description": "The self used component library can provide suggestions if it is easy to use.",
+  "keywords": [
+    "react",
+    "react-component",
+    "xyz-ui"
+  ],
   "dependencies": {
     "classnames": "^2.2.6",
     "emotion": "^9.2.12",
@@ -13,5 +24,8 @@
     "react": ">16.5.2"
   },
   "gitHead": "4cc9ad5ab51e25a74457eb189450aa39ee25cae7",
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": ">=8.0.0"
+  }
 }
