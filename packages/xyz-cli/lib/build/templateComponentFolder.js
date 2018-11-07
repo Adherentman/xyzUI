@@ -1,10 +1,10 @@
 const { writeFile } = require('fs').promises
 const fsExtra = require('fs-extra')
 const path = require('path')
-const pkgData = require('./package.json.generator')
-const webPackTpl = require('./webpack.generator')
-const componentTpl = require('./componentFile.generator')
-const componentStyleTpl = require('./componentStyle.generator')
+const pkgData = require('../generators/package.json.generator')
+const webPackTpl = require('../generators/webpack.generator')
+const componentTpl = require('../generators/componentFile.generator')
+const componentStyleTpl = require('../generators/componentStyle.generator')
 
 const cwd = process.cwd()
 const { error } = console

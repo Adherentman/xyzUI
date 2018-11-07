@@ -2,7 +2,7 @@ const fsExtra = require('fs-extra')
 const fs = require('fs')
 const inquirer = require('inquirer')
 const logger = require('./logger')
-const templateComponentFile = require('./generators/templateComponentFolder')
+const templateComponentFile = require('./build/templateComponentFolder')
 
 const cwd = process.cwd()
 const { log, error } = console
