@@ -18,7 +18,6 @@
   },
   "lint-staged": {
     "*.jsx": [
-      "pretty-quick --staged",
       "standard --fix",
       "git add"
     ]
