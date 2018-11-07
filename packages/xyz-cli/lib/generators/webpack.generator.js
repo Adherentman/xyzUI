@@ -1,6 +1,6 @@
 module.exports = entryName => ({
-  filename: 'webpack.config.js',
-  contents: `const path = require('path')
+	filename: 'webpack.config.js',
+	contents: `const path = require('path')
 
 module.exports = {
   mode: 'production',
@@ -49,8 +49,7 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx']
-  },
-  plugins: [,
+  }
 }
-`
-})
+`,
+});

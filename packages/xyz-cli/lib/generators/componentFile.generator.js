@@ -1,13 +1,14 @@
 // 首字母大写
-function capitalize (str) {
-  return str.charAt(0).toUpperCase() + str.slice(1)
+function capitalize(str) {
+	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 module.exports = config => ({
-  filename: `${capitalize(config)}.jsx`,
-  contents: `import React from 'react'
+	filename: `${capitalize(config)}.jsx`,
+	contents: `import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
+import { ${config}Style } from '../styles/style'
 
 const ${capitalize(config)} = ({
   children,
@@ -30,5 +31,5 @@ ${capitalize(config)}.propTypes = {
   */
   children: PropTypes.node
 }
-`
-})
+`,
+});
