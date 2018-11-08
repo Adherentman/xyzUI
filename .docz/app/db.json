@@ -7,7 +7,7 @@
     "ordering": "ascending",
     "repository": "https://github.com/Adherentman/xyzUI",
     "native": false,
-    "typescript": true,
+    "codeSandbox": true,
     "plugins": [
       {}
     ]
