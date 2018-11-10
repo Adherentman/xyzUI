@@ -18,7 +18,8 @@
   },
   "lint-staged": {
     "*.jsx": [
-      "standard --fix",
+      "prettier --write",
+      "standard --fix --verbose",
       "git add"
     ]
   },

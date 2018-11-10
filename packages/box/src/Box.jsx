@@ -14,7 +14,9 @@ const Box = ({ children, component: Component, container, ...other }) => {
   )
 }
 
-Box.defaultProps = {}
+Box.defaultProps = {
+  component: 'div'
+}
 
 Box.propTypes = {
   /**
@@ -23,3 +25,5 @@ Box.propTypes = {
   children: PropTypes.node,
   container: PropTypes.bool
 }
+
+export default Box
