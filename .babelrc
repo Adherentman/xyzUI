@@ -13,7 +13,7 @@
 	}],
 	"@babel/preset-react"],
 	"plugins": [
-		"emotion",
+		["emotion", { "sourceMap": true }],
 		"react-hot-loader/babel",
 		"@babel/plugin-proposal-object-rest-spread"
 	]

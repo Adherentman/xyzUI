@@ -24,11 +24,8 @@ const makeContainer = () => {
     paddingRight: (gridGutterWidth / 2),
     paddingLeft: (gridGutterWidth / 2),
     boxSizing: 'border-box',
-    display: 'flex',
-    flexWrap: 'wrap'
-
-    // marginRight: 'auto',
-    // marginLeft: 'auto'
+    marginRight: 'auto',
+    marginLeft: 'auto'
   }
   return baseContainer
 }
@@ -50,5 +47,14 @@ export const boxStyle = {
       960,
       1140]
     })
-  )
+  ),
+  containerFluid: css(
+    makeContainer()
+  ),
+  row: css({
+    display: 'flex',
+    flexWrap: 'wrap',
+    marginLeft: -(gridGutterWidth / 2),
+    marginRight: -(gridGutterWidth / 2)
+  })
 }
