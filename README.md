@@ -1,1 +1,1 @@
-![Xyz-Ui](https://xyzuipicture.oss-cn-hangzhou.aliyuncs.com/LogoPng.png)
+![Xyz-Ui](https://blogaaaaxzh.oss-cn-hangzhou.aliyuncs.com/LogoPng.png)
