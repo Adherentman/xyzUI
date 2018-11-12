@@ -4,7 +4,7 @@ import Row from '../packages/box/src/Row'
 
 const BoxExample = () => {
   return (
-    <Box>
+    <Box spacing={40}>
       <Row>
         <div style={{ background: 'green' }}>aaa</div>
         <div style={{ background: 'red' }}>aaa</div>

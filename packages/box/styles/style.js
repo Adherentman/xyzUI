@@ -3,6 +3,8 @@ import facepaint from 'facepaint'
 
 const gridGutterWidth = 30
 
+const GUTTERS = [0, 8, 16, 24, 32, 40]
+
 /**
  * xs: 0
  * sm: 576
@@ -28,6 +30,27 @@ const makeContainer = () => {
     marginLeft: 'auto'
   }
   return baseContainer
+}
+
+const generateGutter = (breakpoint) => {
+  const styles = {}
+
+  GUTTERS.forEach((spacing, index) => {
+    if (index === 0) {
+      // Skip the default style.
+      return
+    }
+
+    styles[`spacing-${breakpoint}-${spacing}`] = css({
+      margin: -spacing / 2,
+      width: `calc(100% + ${spacing}px)`,
+      '& .css-1jwsg2l': {
+        padding: spacing / 2
+      }
+    })
+  })
+
+  return styles
 }
 
 export const boxStyle = {
@@ -56,5 +79,8 @@ export const boxStyle = {
     flexWrap: 'wrap',
     marginLeft: -(gridGutterWidth / 2),
     marginRight: -(gridGutterWidth / 2)
-  })
+  }),
+  ...generateGutter('xs')
 }
+
+console.log(boxStyle)
