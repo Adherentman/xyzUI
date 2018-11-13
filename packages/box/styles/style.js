@@ -1,7 +1,7 @@
 import { css } from 'emotion'
 import facepaint from 'facepaint'
 
-const gridGutterWidth = 30
+// const gridGutterWidth = 30
 
 const GUTTERS = [0, 8, 16, 24, 32, 40]
 
@@ -22,12 +22,10 @@ const makeContainerMaxWidths = facepaint(
 // .contaniar
 const makeContainer = () => {
   let baseContainer = {
-    width: '100%',
-    paddingRight: (gridGutterWidth / 2),
-    paddingLeft: (gridGutterWidth / 2),
+    display: 'flex',
+    flexWrap: 'wrap',
     boxSizing: 'border-box',
-    marginRight: 'auto',
-    marginLeft: 'auto'
+    width: '100%'
   }
   return baseContainer
 }
@@ -42,11 +40,11 @@ const generateGutter = (breakpoint) => {
     }
 
     styles[`spacing-${breakpoint}-${spacing}`] = css({
-      margin: -spacing / 2,
-      width: `calc(100% + ${spacing}px)`,
-      '& .css-1jwsg2l': {
-        padding: spacing / 2
-      }
+      // margin: -spacing / 2,
+      width: `calc(100% + ${spacing}px)`
+      // '& > .css-1umg8wx': {
+      // padding: spacing / 2
+      // }
     })
   })
 
@@ -62,7 +60,7 @@ export const boxStyle = {
    * alignItems: 'flex-start'
    * flex: 0 1 auto
    */
-  container: css(
+  flexBox: css(
     makeContainer(),
     makeContainerMaxWidths({ maxWidth: [
       540,
@@ -71,14 +69,24 @@ export const boxStyle = {
       1140]
     })
   ),
-  containerFluid: css(
-    makeContainer()
-  ),
-  row: css({
-    display: 'flex',
-    flexWrap: 'wrap',
-    marginLeft: -(gridGutterWidth / 2),
-    marginRight: -(gridGutterWidth / 2)
+  'justify-center': css({
+    justifyContent: 'center'
+  }),
+  /* Styles applied to the root element if `justify="flex-end"`. */
+  'justify-end': css({
+    justifyContent: 'flex-end'
+  }),
+  /* Styles applied to the root element if `justify="space-between"`. */
+  'justify-space-between': css({
+    justifyContent: 'space-between'
+  }),
+  /* Styles applied to the root element if `justify="space-around"`. */
+  'justify-space-around': css({
+    justifyContent: 'space-around'
+  }),
+  /* Styles applied to the root element if `justify="space-evenly"`. */
+  'justify-space-evenly': css({
+    justifyContent: 'space-evenly'
   }),
   ...generateGutter('xs')
 }

@@ -1,15 +1,14 @@
 import React from 'react'
 import Box from '../packages/box/src/Box'
-import Row from '../packages/box/src/Row'
 
 const BoxExample = () => {
   return (
-    <Box spacing={40}>
-      <Row>
-        <div style={{ background: 'green' }}>aaa</div>
-        <div style={{ background: 'red' }}>aaa</div>
-        <div style={{ background: 'blue' }}>aaa</div>
-      </Row>
+    <Box flexbox spacing={16}>
+      <Box flexbox justify='space-between'>
+        <div style={{ background: 'green', height: 140, width: 100 }}>bbb</div>
+        <div style={{ background: 'red', height: 140, width: 100 }}>bbb</div>
+        <div style={{ background: 'blue', height: 140, width: 100 }}>bbb</div>
+      </Box>
     </Box>
   )
 }

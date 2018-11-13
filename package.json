@@ -65,6 +65,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
+    "@material-ui/core": "^3.5.1",
     "classnames": "^2.2.6",
     "emotion": "^9.2.12",
     "prop-types": "^15.6.2",
