@@ -1,8 +1,8 @@
 export const imports = {
-  'docs/Home.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "docs-home" */ 'docs/Home.mdx'),
-  'docs/components/Button.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "docs-components-button" */ 'docs/components/Button.mdx'),
-  'docs/components/Typography.mdx': () =>
-    import(/* webpackPrefetch: true, webpackChunkName: "docs-components-typography" */ 'docs/components/Typography.mdx'),
+  'docz/Home.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "docz-home" */ 'docz/Home.mdx'),
+  'docz/components/Button.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "docz-components-button" */ 'docz/components/Button.mdx'),
+  'docz/components/Typography.mdx': () =>
+    import(/* webpackPrefetch: true, webpackChunkName: "docz-components-typography" */ 'docz/components/Typography.mdx'),
 }

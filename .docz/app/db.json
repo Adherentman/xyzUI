@@ -13,14 +13,14 @@
     ]
   },
   "entries": {
-    "docs/Home.mdx": {
+    "docz/Home.mdx": {
       "name": "Home",
       "route": "/",
       "order": -1,
-      "id": "f3241200b3e85b3b919f9d8df3bf19ca",
-      "filepath": "docs/Home.mdx",
-      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/Home.mdx",
-      "slug": "docs-home",
+      "id": "a76596794e18123c9c58e7d836177b81",
+      "filepath": "docz/Home.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docz/Home.mdx",
+      "slug": "docz-home",
       "menu": null,
       "headings": [
         {
@@ -30,25 +30,25 @@
         }
       ]
     },
-    "docs/components/Button.mdx": {
+    "docz/components/Button.mdx": {
       "name": "Button",
       "menu": "Components",
-      "id": "8661b6981e2294626dd24685bfd3582b",
-      "filepath": "docs/components/Button.mdx",
-      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/components/Button.mdx",
-      "slug": "docs-components-button",
-      "route": "/docs-components-button",
+      "id": "4017337cdcfae139398714615a7d261f",
+      "filepath": "docz/components/Button.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docz/components/Button.mdx",
+      "slug": "docz-components-button",
+      "route": "/docz-components-button",
       "order": 0,
       "headings": []
     },
-    "docs/components/Typography.mdx": {
+    "docz/components/Typography.mdx": {
       "name": "Typography",
       "menu": "Components",
-      "id": "7fc1ad3eee13a8e66253430b9ec0e05a",
-      "filepath": "docs/components/Typography.mdx",
-      "link": "https://github.com/Adherentman/xyzUI/edit/master/docs/components/Typography.mdx",
-      "slug": "docs-components-typography",
-      "route": "/docs-components-typography",
+      "id": "1caa5d377b4eb4b4ddb4474a09a3007f",
+      "filepath": "docz/components/Typography.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docz/components/Typography.mdx",
+      "slug": "docz-components-typography",
+      "route": "/docz-components-typography",
       "order": 0,
       "headings": [
         {
