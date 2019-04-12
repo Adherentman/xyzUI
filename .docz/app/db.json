@@ -8,6 +8,7 @@
     "repository": "https://github.com/Adherentman/xyzUI",
     "native": false,
     "codeSandbox": true,
+    "base": "/xyzUI",
     "plugins": [
       {}
     ]
