@@ -35,7 +35,7 @@ Box.propTypes = {
    */
   children: PropTypes.node,
   flexbox: PropTypes.bool,
-  spacing: PropTypes.any
+  spacing: PropTypes.number
 }
 
 export default Box

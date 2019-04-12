@@ -1,9 +1,9 @@
 {
-  "app.js": "/xyzUI/static/js/app.6d82e089.js",
-  "docz-components-box.js": "/xyzUI/static/js/docz-components-box.6f666306.js",
+  "app.js": "/xyzUI/static/js/app.83419a40.js",
+  "docz-components-box.js": "/xyzUI/static/js/docz-components-box.cd3c349e.js",
   "docz-components-typography.js": "/xyzUI/static/js/docz-components-typography.646fca0f.js",
-  "docz-home.js": "/xyzUI/static/js/docz-home.656ed2a4.js",
-  "runtime~app.js": "/xyzUI/static/js/runtime~app.a263ce8853c688de27dd.js",
+  "docz-home.js": "/xyzUI/static/js/docz-home.3f5a5e0a.js",
+  "runtime~app.js": "/xyzUI/static/js/runtime~app.2538a5e03e85a3537d9f.js",
   "vendors.js": "/xyzUI/static/js/vendors.eed07046.js",
   "index.html": "/xyzUI/index.html"
 }

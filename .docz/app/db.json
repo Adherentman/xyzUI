@@ -26,8 +26,18 @@
       "headings": [
         {
           "depth": 1,
-          "slug": "hello-world",
-          "value": "Hello world"
+          "slug": "xyz-ui",
+          "value": "Xyz UI"
+        },
+        {
+          "depth": 2,
+          "slug": "component",
+          "value": "Component"
+        },
+        {
+          "depth": 2,
+          "slug": "tools",
+          "value": "Tools"
         }
       ]
     },
