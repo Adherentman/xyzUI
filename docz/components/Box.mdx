@@ -1,0 +1,27 @@
+---
+name: Box
+menu: Components
+---
+
+
+import { Playground, PropsTable } from 'docz'
+import Box from '../../packages/box/src/Box.jsx'
+
+# Box
+
+<Playground>
+  <Box flexbox spacing={16}>
+    <Box flexbox justify='space-between'>
+      <div style={{ background: 'green', height: 140, width: 100 }}>bbb</div>
+      <div style={{ background: 'red', height: 140, width: 100 }}>bbb</div>
+      <div style={{ background: 'blue', height: 140, width: 100 }}>bbb</div>
+    </Box>
+  </Box>
+</Playground>
+
+
+## API
+
+### Box
+
+<PropsTable of={Box}/>

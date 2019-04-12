@@ -31,16 +31,32 @@
         }
       ]
     },
-    "docz/components/Button.mdx": {
-      "name": "Button",
+    "docz/components/Box.mdx": {
+      "name": "Box",
       "menu": "Components",
-      "id": "4017337cdcfae139398714615a7d261f",
-      "filepath": "docz/components/Button.mdx",
-      "link": "https://github.com/Adherentman/xyzUI/edit/master/docz/components/Button.mdx",
-      "slug": "docz-components-button",
-      "route": "/docz-components-button",
+      "id": "6bd10c2a66a74dba07534e0ff22e383c",
+      "filepath": "docz/components/Box.mdx",
+      "link": "https://github.com/Adherentman/xyzUI/edit/master/docz/components/Box.mdx",
+      "slug": "docz-components-box",
+      "route": "/docz-components-box",
       "order": 0,
-      "headings": []
+      "headings": [
+        {
+          "depth": 1,
+          "slug": "box",
+          "value": "Box"
+        },
+        {
+          "depth": 2,
+          "slug": "api",
+          "value": "API"
+        },
+        {
+          "depth": 3,
+          "slug": "box-1",
+          "value": "Box"
+        }
+      ]
     },
     "docz/components/Typography.mdx": {
       "name": "Typography",

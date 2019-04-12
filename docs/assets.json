@@ -1,9 +1,9 @@
 {
-  "app.js": "/xyzUI/static/js/app.1768c9e6.js",
-  "docz-components-button.js": "/xyzUI/static/js/docz-components-button.d35808fa.js",
+  "app.js": "/xyzUI/static/js/app.6d82e089.js",
+  "docz-components-box.js": "/xyzUI/static/js/docz-components-box.6f666306.js",
   "docz-components-typography.js": "/xyzUI/static/js/docz-components-typography.646fca0f.js",
   "docz-home.js": "/xyzUI/static/js/docz-home.656ed2a4.js",
-  "runtime~app.js": "/xyzUI/static/js/runtime~app.0ccf166cb86ede2db2ba.js",
+  "runtime~app.js": "/xyzUI/static/js/runtime~app.a263ce8853c688de27dd.js",
   "vendors.js": "/xyzUI/static/js/vendors.eed07046.js",
   "index.html": "/xyzUI/index.html"
 }
