@@ -9789,7 +9789,7 @@ node-releases@^1.1.13, node-releases@^1.1.25:
   dependencies:
     semver "^5.3.0"
 
-node-sass@^4.9.3, node-sass@^4.9.4:
+node-sass@^4.9.3:
   version "4.10.0"
   resolved "http://registry.npm.taobao.org/node-sass/download/node-sass-4.10.0.tgz#dcc2b364c0913630945ccbf7a2bbf1f926effca4"
   dependencies:
